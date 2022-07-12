@@ -2,7 +2,8 @@ import 'package:example/state/add_cubit.dart';
 import 'package:example/state/add_cubit_error_handler.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:bloc_toolkit/widgets.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:bloc_toolkit/l10n.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,6 +17,16 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      localizationsDelegates: const [
+        BlocToolkitLocalizations.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      supportedLocales: const [
+        Locale('en', ''),
+        Locale('pt', ''),
+      ],
       theme: ThemeData(
         // This is the theme of your application.
         //

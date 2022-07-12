@@ -9,6 +9,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: ^0.17.0
   bloc: ^8.0.3
   flutter_bloc: ^8.0.1
   equatable: ^2.0.3
@@ -23,6 +26,7 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
+  #generate: true
 
   # To add assets to your package, add an assets section, like this:
   # assets:

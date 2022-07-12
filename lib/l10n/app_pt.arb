@@ -1,0 +1,18 @@
+{
+    "tryAgainButton": "TENTAR NOVAMENTE",
+    "@tryAgainButton": {
+        "description": "Rótulo para um botão tentar novamente"
+    },
+    "okButton": "OK",
+    "@okButton": {
+        "description": "Rótulo para um botão de OK"
+    },
+    "cancelButton": "CANCELAR",
+    "@cancelButton": {
+        "description": "Rótulo para botão cancelar"
+    },
+    "errorLabel": "Erro!",
+    "@errorLabel": {
+        "description": "Um label para alerta de erro"
+    }
+}
